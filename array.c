@@ -40,6 +40,39 @@ int smallest(int x[], int n) {
     
 }
 
+void even_nums(int x[], int n) {
+    printf("Even numbers: ");
+    for (int i = 0; i < n; i++)
+    {
+        if (x[i] % 2==0)
+        {
+            printf("%d ", x[i]);
+        }
+    }
+    printf("\n");
+}
+
+void odd_nums(int x[], int n) {
+    printf("Odd numbers: ");
+    for (int i = 0; i < n; i++)
+    {
+        if (x[i] %2 !=0) 
+        {
+            printf("%d ",x[i]);
+        }
+    }
+    printf("\n");
+}
+
+void sum_arr(int x[], int n) {
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += x[i];
+    }
+    printf("Sum: %d", sum);
+}
+
 void main(){
     int arr[5];
     input(arr, 5);
@@ -48,4 +81,10 @@ void main(){
     printf("Largest element = %d\n", largest(arr, 5));
 
     printf("Smallest element = %d\n", smallest(arr, 5));
+
+    even_nums(arr, 5);
+
+    odd_nums(arr, 5);
+
+    sum_arr(arr,5);
 }
