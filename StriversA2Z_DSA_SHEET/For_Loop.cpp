@@ -27,6 +27,7 @@ public:
 
 int main() {
     Solution s;
-    cout << "sum = " << s.forLoop(1,5);
+    cout << "sum = " << s.forLoop(1,5) << endl;
+    cout << "sum = " << s.forLoop(3,7);
     return 0;
 }
