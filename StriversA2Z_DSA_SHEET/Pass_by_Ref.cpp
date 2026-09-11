@@ -33,12 +33,19 @@ void reverse(vector<int>& arr)
 int main()
 {
     vector<int> arr = {1, 2, 3, 4, 5, 6};
+    vector<int> arr1 = {1, 2, 1, 1, 5, 1};
 
     reverse(arr);
+    reverse(arr1);
 
     for (int i = 0; i < arr.size(); i++)
     {
         cout << arr[i] << " ";
+    }
+    cout << endl;
+    for (int i = 0; i < arr1.size(); i++)
+    {
+        cout << arr1[i] << " ";
     }
 
     return 0;
