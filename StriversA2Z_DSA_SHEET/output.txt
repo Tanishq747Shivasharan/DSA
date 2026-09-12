@@ -1,0 +1,15 @@
+=== C++ PROGRAM RUN ===
+
+=== PROGRAM OUTPUT ===
+
+* * * * 
+* * * * 
+* * * * 
+* * * * 
+* 
+* * 
+* * * 
+* * * * 
+
+
+=== STATUS: SUCCESS ===
