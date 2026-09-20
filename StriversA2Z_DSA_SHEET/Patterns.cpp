@@ -186,37 +186,77 @@ void pattern15(int n) {
         cout << endl;
     }
 }
+void pattern16(int n) {
+    for (int i=0; i<n; i++) {
+        char ch='A' +i;
+        for (int j=0; j<=i; j++) {
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
+void pattern17(int n) {
+    for (int i=0; i<=n; i++) {
+        // loop for spaces.
+        for(int j=0; j<=n-i-1; j++) {
+            cout << " ";
+        }
+        // loop for alphabets
+        char ch='A';
+        int breakpoint = (2*i+1)/2;
+        for(int j=1; j<=2*i+1; j++) {
+            cout << ch;
+            if (j<=breakpoint) ch++;
+            else ch--;
+            
+        }
+        // loop for spaces.
+        for(int j=0; j<=n-i-1; j++) {
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
+void pattern18(int n) {
+    int space =0;
+    for(int i=0; i<n; i++) {
+        //stars
+        for(int j=0; j<n-i; j++) {
+            cout << "*";
+        }
+        //space
+        for(int j=0; j<space; j++) {
+            cout << " ";
+        }
+        //stars
+        for(int j=0; j<n-i; j++) {
+            cout << "*";
+        }
+        space += 2;
+        cout << endl;
+    }
+    int iniS=8;
+    for(int i=0; i<n; i++) {
+        //stars
+        for(int j=0; j<=i; j++) {
+            cout << "*";
+        }
+        //space
+        for(int j=0; j<iniS; j++) {
+            cout << " ";
+        }
+        //stars
+        for(int j=0; j<=i; j++) {
+            cout << "*";
+        }
+        iniS -= 2;
+        cout << endl;
+    }
+}
 
 int main() {
     int n;
     cin >> n;
-    // pattern1(n);
-    // cout << endl;
-    // pattern2(n);
-    // cout << endl;
-    // pattern3(n);
-    // cout << endl;
-    // pattern4(n);
-    // cout << endl;
-    // pattern5(n);
-    // cout << endl;
-    // pattern6(n);
-    // cout << endl;
-    // pattern7(n);
-    // cout << endl;
-    // pattern8(n);
-    // cout << endl;
-    // pattern9(n);
-    // cout << endl;
-    // pattern10(n);
-    // cout << endl;
-    // pattern11(n);
-    // cout << endl;
-    // pattern12(n);
-    // cout << endl;
-    // pattern13(n);
-    // cout << endl;
-    pattern14(n);
-    pattern15(n);
+    pattern18(n);
     return 0;
 }
