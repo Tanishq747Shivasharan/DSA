@@ -179,7 +179,7 @@ void pattern14(int n) {
 }
 void pattern15(int n) {
     for(int i=0; i<=n; i++) {
-        // i=2 --> n-2-1 = 
+        // i=2 --> n-2-1
         for(char j='A'; j<= 'A' + (n-i-1); j++) {
             cout << j << " ";
         }
@@ -252,6 +252,9 @@ void pattern18(int n) {
         iniS -= 2;
         cout << endl;
     }
+}
+void pattern19(int n) {
+    
 }
 
 int main() {
