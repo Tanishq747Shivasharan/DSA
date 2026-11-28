@@ -10,7 +10,7 @@ public:
     }
 
     vector<char> reverseString(vector<char>& s){
-        reverseHelper(s, 0, s.size() - 1);
+        reverseHelper(s, 0, (int)s.size() - 1);
         return s;
     }
 };
